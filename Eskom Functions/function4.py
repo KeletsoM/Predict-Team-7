@@ -2,7 +2,19 @@
 
 
 def extract_municipality_hashtags(df):
-    # your code here
+
+    import pandas as pd
+    import numpy as np
+
+    mun_dict = {
+    '@CityofCTAlerts' : 'Cape Town',
+    '@CityPowerJhb' : 'Johannesburg',
+    '@eThekwiniM' : 'eThekwini' ,
+    '@EMMInfo' : 'Ekurhuleni',
+    '@centlecutility' : 'Mangaung',
+    '@NMBmunicipality' : 'Nelson Mandela Bay',
+    '@CityTshwane' : 'Tshwane'
+        }
 
     g = df['Tweets'].str.findall(r'@.*?(?=\s|$)')
     df['municipality'] = g.apply(lambda x: [mun_dict[g] for g in mun_dict.keys() if g in x])
