@@ -1,5 +1,5 @@
 def date_parser(dates):
-    """ initialize and empty list"""
+    """ initialize an empty list"""
     c = [] 
     for i in dates:
         i = i[:10] 
