@@ -6,4 +6,4 @@ twitter_url = 'https://raw.githubusercontent.com/Explore-AI/Public-Data/master/D
 twitter_df = pd.read_csv(twitter_url)
 twitter_df.head()
 
-word_splitter(twitter_df.copy())
+word_splitter(twitter_df.copy()) 
