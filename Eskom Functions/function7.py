@@ -1,4 +1,5 @@
 def stop_words_remover(df):
+''' This function which removes english stop words from a tweet.'''
     stopwords = stop_words_dict['stopwords']
     Tweets_split = df['Tweets'].apply(lambda x: x.lower().split()) # Tokeising the sentences are according to the definition in function 6
     no_stopwords = []  # Creating  a list to place the setences without the stopwords
