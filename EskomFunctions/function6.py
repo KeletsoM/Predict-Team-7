@@ -1,10 +1,18 @@
+### START FUNCTION
 def word_splitter(df):
-# your code
+    # your code here
+    # initializing char to increment through the data frame with
+    char = 0
+    
+    # each char (word) encountered has the .lower and .split methods applied to it 
+    # in the data frame as in increments
+    df['Split Tweets'] = [char.lower().split() for char in df['Tweets']]
+    
+    # the returned result should be displayed 
+    # in the following columns and rows using the .head function
+    df[['Tweets','Date', 'Split Tweets']].head()
+    
+    #return result
+    return (df)
 
-import pandas as pd
-def word_splitter(df):
-    df['tweets'] = df.apply(lambda row: row, axis = 'Split_Tweets')
-    df['Split_Tweets'] = df['tweets'].str.lower()
-    for i in list:
-        Split_Tweets.append(i.split(' '))
-        print(df)
+### END FUNCTION
