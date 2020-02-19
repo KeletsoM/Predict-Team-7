@@ -1,5 +1,5 @@
 def date_parser(dates):
-    """ return a list of strings where each element in the returned list contains only the date
+    """ This function returns a list of strings where each element in the returned list contains only the date
     
     Example
     -------
