@@ -6,4 +6,4 @@ twitter_url = 'https://raw.githubusercontent.com/Explore-AI/Public-Data/master/D
 twitter_df = pd.read_csv(twitter_url)
 twitter_df.head()
 
-assert number_of_tweets_per_day(twitter_df.copy()) == 
+assert number_of_tweets_per_day(twitter_df.copy()).iloc[0,0] == 18
