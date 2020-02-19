@@ -7,4 +7,4 @@ twitter_df = pd.read_csv(twitter_url)
 twitter_df.head()
 
 
-assert number_of_tweets_per_day(twitter_df.copy()) 'íncorrect'
+assert number_of_tweets_per_day(twitter_df.copy()) 
