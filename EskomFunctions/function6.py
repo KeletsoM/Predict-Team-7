@@ -30,6 +30,6 @@ Example
     df[['Tweets','Date', 'Split Tweets']].head()
     
     #return result
-    return (df)
+    return df
 
 ### END FUNCTION
