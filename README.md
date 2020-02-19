@@ -111,14 +111,12 @@ The function takes a pandas dataframe of twitter data and returns the number of 
 
 
 # Function 6
+The function takes pandas dataframe as input, split the sentence into a list of separate words and returns a modified dataframe
 
+    Example 
+    -------
 
-
-
-
-
-
-
+    words_splitter(twitter_df.copy()).loc[0, "Split Tweets"] == ['@bongadlulane', 'please', 'send', 'an', 'email', 'to', 'mediadesk@eskom.co.za']
 
 
 # Function 7 
@@ -129,5 +127,3 @@ The function takes a pandas dataframe of twitter data and returns the number of 
     
     stop_words_remover(twitter_df.copy()).loc[100, "Without Stop Words"] == ['#eskomnorthwest', '#mediastatement', ':', 'notice', 'supply', 'interruption', 'lichtenburg', 'area', 'https://t.co/7hfwvxllit']
 
-
-    

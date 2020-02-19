@@ -7,6 +7,7 @@ Example
 ----------
 
 words_splitter(twitter_df.copy()).loc[0, "Split Tweets"] == ['@bongadlulane', 'please', 'send', 'an', 'email', 'to', 'mediadesk@eskom.co.za']
+
 """
     
     # initializing char to increment through the data frame with
