@@ -4,4 +4,4 @@ twitter_url = 'https://raw.githubusercontent.com/Explore-AI/Public-Data/master/D
 twitter_df = pd.read_csv(twitter_url)
 twitter_df.head()
 
-assert extract_municipality_hashtags(twitter_df.copy()) 
+assert extract_municipality_hashtags(twitter_df.copy()) == 

@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 def dictionary_of_metrics(items):
     items = np.array(items)
     metric_dict = {'mean': round(np.mean(items),2),'median': round(np.median(items),2), 
