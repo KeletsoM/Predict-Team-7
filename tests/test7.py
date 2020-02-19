@@ -1,4 +1,5 @@
-"""testing the function on the twitter data."""
+"""" Test for function 7 """
+
 import pandas as pd
 twitter_url = 'https://raw.githubusercontent.com/Explore-AI/Public-Data/master/Data/twitter_nov_2019.csv'
 twitter_df = pd.read_csv(twitter_url)
