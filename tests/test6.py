@@ -8,4 +8,4 @@ twitter_url = 'https://raw.githubusercontent.com/Explore-AI/Public-Data/master/D
 twitter_df = pd.read_csv(twitter_url)
 twitter_df.head()
 
-assert word_splitter(twitter_df.copy()) == 
+assert word_splitter(twitter_df.copy()).loc[0, "Without Stop Words"] == ['@bongadlulane', 'Please', 'send', 'an', 'email', 'to', 'mediadesk@eskom.co.za']

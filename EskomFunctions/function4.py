@@ -1,6 +1,3 @@
-#Function 4
-
-
 def extract_municipality_hashtags(df):
 
 

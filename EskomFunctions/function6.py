@@ -1,5 +1,3 @@
-### START FUNCTION
-
 def word_splitter(df):
     """ This function takes pandas dataframe as input, split the sentence into a list of separate words and returns a modified dataframe
 
@@ -18,7 +16,6 @@ Example
 
 """
 
-    # your code here
     # initializing char to increment through the data frame with
     char = 0
     
@@ -33,4 +30,4 @@ Example
     #return result
     return df
 
-### END FUNCTION
+
