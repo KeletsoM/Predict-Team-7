@@ -12,10 +12,11 @@ def five_num_summary(items):
 
     """
 
-    
+    #Importing the module
     import numpy as np
     items = np.array(items)
     
+    #Assigning the required data to 'num_summary'
     num_summary = {'max': round(np.max(items),2), 'median': round(np.median(items),2), 'min': round(np.min(items),2), 'q1': round(np.quantile(items,0.25),2), 'q3': round(np.quantile(items,0.75),2)}
     
     return num_summary
