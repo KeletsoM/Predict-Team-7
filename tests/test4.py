@@ -1,5 +1,3 @@
-""" Test for function 4"""
-
 import pandas as pd
 from EskomFunctions.function4 import extract_municipality_hashtags
 twitter_url = 'https://raw.githubusercontent.com/Explore-AI/Public-Data/master/Data/twitter_nov_2019.csv'
