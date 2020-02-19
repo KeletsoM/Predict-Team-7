@@ -12,6 +12,22 @@ def extract_municipality_hashtags(df):
 
     The function also extracts hashtags and saves them under the hastags column as a list in the dataframe.
     
+    Example
+    --------
+
+    Input: The input is in the form of a dataframe with the following format;
+
+        Tweets                                                  Date
+        @IamGladstone @CityPowerJhb @HermanMashaba The...       2019-11-29 11:28:40
+        #ESKOMFREESTATE #MEDIASTATEMENT : ESKOM SUSPEN... 	    2019-11-29 12:17:43
+
+    Output: 
+
+        Tweets
+         Tweets                                                  Date                   municipality        hashtags
+        @IamGladstone @CityPowerJhb @HermanMashaba The...       2019-11-29 11:28:40     johannesburg        NaN
+        #ESKOMFREESTATE #MEDIASTATEMENT : ESKOM SUSPEN... 	    2019-11-29 12:17:43     NaN                 [#eskomfreestate, #mediastatement, :, eskom, s...]
+
     '''
 
     import pandas as pd
