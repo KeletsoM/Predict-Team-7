@@ -18,7 +18,7 @@ def dictionary_of_metrics(items):
     #Importing the module
     import numpy as np
     
-    #Assigning required data to 'h'
+    #Assigning required data to metric_dict
     items = np.array(items)
     metric_dict = {'mean': round(np.mean(items),2),'median': round(np.median(items),2), 
                     'var': round(np.var(items, ddof = 1),2),'std': round(np.std(items, ddof = 1),2), 
